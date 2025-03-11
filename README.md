@@ -2,7 +2,7 @@
 
 
 Files, version control and an auxiliary base for documents outside of the Google Drive. 
-
+```mermaid
 flowchart TD
     subgraph "Frontend - AWS Amplify"
         A[React App]
@@ -56,3 +56,4 @@ flowchart TD
     L -->|Content Delivery| A
     P -->|Logs & Metrics| F
     P -->|Logs & Metrics| A
+```
