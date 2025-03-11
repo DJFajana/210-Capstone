@@ -23,7 +23,6 @@ flowchart TD
     subgraph "AWS Services"
         K[Route 53 - DNS]
         L[CloudFront - CDN]
-        M[S3 - Image Storage]
         N[Cognito - Auth]
         O[API Gateway]
         P[CloudWatch - Monitoring]
@@ -45,8 +44,6 @@ flowchart TD
     %% Integration flow
     C -->|Upload Image| O
     O -->|Forward Request| G
-    G -->|Store Image| M
-    I -->|Retrieve Image| M
     J -->|Return Prediction| G
     G -->|Send Results| D
     E -->|Authenticate| N
