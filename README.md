@@ -9,7 +9,6 @@ flowchart TD
         B[User Interface]
         C[Image Upload Component]
         D[Results Display Component]
-        E[User Authentication]
     end
 
     subgraph "Backend - AWS Elastic Beanstalk"
@@ -32,7 +31,6 @@ flowchart TD
     A --> B
     B --> C
     B --> D
-    B --> E
 
     %% Backend flow
     F --> G
@@ -46,7 +44,6 @@ flowchart TD
     O -->|Forward Request| G
     J -->|Return Prediction| G
     G -->|Send Results| D
-    E -->|Authenticate| N
 
     %% Infrastructure connections
     K -->|Domain Routing| L
